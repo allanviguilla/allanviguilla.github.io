@@ -1,0 +1,149 @@
+*,*::after, *::before{
+    box-sizing: border-box;
+}
+
+/*CUSTOM PROPS*/
+/*-----------*/
+:root{
+    --color-primary: #3359CC;
+    --color-secondary: #50CC1B;
+    --color-accent: #E8AEA7;
+    --color-body: #5c5577;
+}
+
+/*TYPOGRAPHY*/
+/*----------*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.4rem;
+    color: var(--color-body);
+    line-height: 1.5;
+}
+
+/*BUTTON*/
+/*--------------*/
+
+.btn{
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 2rem 3rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+    
+.btn--download{
+    background: var(--color-accent);
+    color: white;
+}
+
+.btn--download:hover{
+    background:#FFD200;
+    transition: .25s;
+}
+
+
+/*INTRO SECTION*/
+/*------------*/
+#intro{
+    display: flex;
+    height: 100vh;
+    background-color: var(--color-primary);
+}
+
+.intro--title{
+    color: white;
+    font-size: 5rem;
+    font-weight: 800;
+    margin: 0;
+    padding: 0 3rem;
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 700px){
+    .intro--title{
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+/*PORTALS*/
+/*-------*/
+.portal{
+    display: flex;
+    margin: 10rem auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.portal--img{
+    justify-content: unset;
+    align-items: unset;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+}
+
+.portal:hover .portal--img{
+    filter: blur(10px) grayscale(70%) drop-shadow(16px 16px 20px var(--color-accent)) invert(80%);
+    transition: .2s;
+}
+
+.portal--title{
+    position: absolute;
+    display: none;
+    font-size: 4.7rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 2;
+}
+
+.portal:hover .portal--title{
+    display: initial;
+}
+
+
+/*GRID*/
+/*----*/
+.grid{
+    display: grid;
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1by3{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*FOOTER SECTION*/
+/*-------------*/
+#footer{
+    height: 300px;
+    background: var(--color-secondary);
+    text-align: center;
+}
+
+.footer--title{
+    padding-top: 50px;
+    color: white;
+    font-size: 5rem;
+}
