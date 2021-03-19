@@ -122,6 +122,17 @@ body {
 }
 
 
+@media screen and (max-width:540px){
+    .portal .portal--img{
+        filter: blur(10px) grayscale(70%) drop-shadow(16px 16px 20px var(--color-accent)) invert(80%);
+        transition: .2s;
+    }
+
+    .portal .portal--title{
+        display: initial;
+    }
+}
+
 /*GRID*/
 /*----*/
 .grid{
