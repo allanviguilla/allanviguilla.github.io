@@ -109,10 +109,10 @@ body {
 .portal--title{
     position: absolute;
     display: none;
-    font-size: 4.7rem;
+    font-size: 4rem;
     font-weight: 800;
+    padding: .5rem 2rem;
     color: var(--color-accent);
-    text-transform: uppercase;
     text-align: center;
     z-index: 2;
 }
