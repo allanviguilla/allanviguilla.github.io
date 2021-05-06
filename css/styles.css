@@ -21,7 +21,7 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--color-body);
   line-height: 1.5;
 }
@@ -108,6 +108,11 @@ body {
   padding: 2rem 2.5rem;
 }
 
+.portal--link {
+  color: var(--color-body);
+  text-decoration: none;
+}
+
 .coral {
   background: lightcoral;
 }
@@ -122,6 +127,11 @@ body {
 
 .portal--arrow {
   transform: rotate(-90deg);
+}
+
+.portal--arrow:hover {
+  transform: rotate(-90deg) translateY(5px);
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 540px) {
