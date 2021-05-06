@@ -1,160 +1,163 @@
-*,*::after, *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 /*CUSTOM PROPS*/
 /*-----------*/
-:root{
-    --color-primary: #3359CC;
-    --color-secondary: #50CC1B;
-    --color-accent: #E8AEA7;
-    --color-body: #5c5577;
+:root {
+  --color-primary: #3359cc;
+  --color-secondary: #50cc1b;
+  --color-accent: #ffd200;
+  --color-body: #5c5577;
 }
 
 /*TYPOGRAPHY*/
 /*----------*/
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.4rem;
-    color: var(--color-body);
-    line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  color: var(--color-body);
+  line-height: 1.5;
 }
 
 /*BUTTON*/
 /*--------------*/
 
-.btn{
-    border-radius: 40px;
-    border: 0;
-    cursor: pointer;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 2rem 3rem;
-    margin: 1rem 0;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    white-space: nowrap;
-}
-    
-.btn--download{
-    background: var(--color-accent);
-    color: white;
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
-.btn--download:hover{
-    background:#FFD200;
-    transition: .25s;
+.btn--download {
+  background: var(--color-secondary);
+  color: white;
 }
 
+.btn--download:hover {
+  background: var(--color-accent);
+  transition: 0.25s;
+}
 
 /*INTRO SECTION*/
 /*------------*/
-#intro{
-    display: flex;
-    height: 100vh;
-    background-color: var(--color-primary);
+#intro {
+  display: flex;
+  height: 100vh;
+  background-color: var(--color-primary);
 }
 
-.intro--title{
-    color: white;
-    font-size: 5rem;
-    font-weight: 800;
-    margin: 0;
-    padding: 0 3rem;
-    justify-self: center;
-    align-self: center;
+.intro--title {
+  color: white;
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0 3rem;
+  justify-self: center;
+  align-self: center;
 }
 
-@media screen and (min-width: 700px){
-    .intro--title{
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
+@media screen and (min-width: 700px) {
+  .intro--title {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
 }
 
 /*PORTALS*/
 /*-------*/
-.portal{
-    display: flex;
-    margin: 10rem auto;
-    height: 300px;
-    width: 300px;
-    border-radius: 30px;
-    position: relative;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
+.portal {
+  margin: 10rem auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 30px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
-.portal--img{
-    justify-content: unset;
-    align-items: unset;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 1;
+.portal--header {
+  color: white;
+  font-weight: 800;
+  font-size: 2.4rem;
+  padding: 1.5rem 2.5rem;
+  text-align: center;
 }
 
-.portal:hover .portal--img{
-    filter: blur(10px) grayscale(70%) drop-shadow(16px 16px 20px var(--color-accent)) invert(80%);
-    transition: .2s;
+.portal--description {
+  color: var(--color-body);
+  font-weight: 400;
+  padding: 2rem 2.5rem;
 }
 
-.portal--title{
-    position: absolute;
-    display: none;
-    font-size: 4rem;
-    font-weight: 800;
-    padding: .5rem 2rem;
-    color: var(--color-accent);
-    text-align: center;
-    z-index: 2;
+.coral {
+  background: lightcoral;
 }
 
-.portal:hover .portal--title{
+.salmon {
+  background: darksalmon;
+}
+
+.orange {
+  background: orange;
+}
+
+.portal--arrow {
+  transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 540px) {
+  .portal .portal--img {
+    filter: blur(10px) grayscale(70%)
+      drop-shadow(16px 16px 20px var(--color-accent)) invert(80%);
+    transition: 0.2s;
+  }
+
+  .portal .portal--title {
     display: initial;
-}
-
-
-@media screen and (max-width:540px){
-    .portal .portal--img{
-        filter: blur(10px) grayscale(70%) drop-shadow(16px 16px 20px var(--color-accent)) invert(80%);
-        transition: .2s;
-    }
-
-    .portal .portal--title{
-        display: initial;
-    }
+  }
 }
 
 /*GRID*/
 /*----*/
-.grid{
-    display: grid;
+.grid {
+  display: grid;
 }
 
 @media screen and (min-width: 1024px) {
-    .grid--1by3{
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .grid--1by3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*FOOTER SECTION*/
 /*-------------*/
-#footer{
-    height: 300px;
-    background: var(--color-secondary);
-    text-align: center;
+#footer {
+  height: 300px;
+  background: var(--color-body);
+  text-align: center;
 }
 
-.footer--title{
-    padding-top: 50px;
-    color: white;
-    font-size: 5rem;
+.footer--title {
+  padding-top: 50px;
+  color: white;
+  font-size: 5rem;
 }
