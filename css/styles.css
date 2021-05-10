@@ -145,8 +145,17 @@ p {
   transition: all 0.5s;
 }
 
-/*GRID*/
+/*BLOG/GRID COMPONENTS*/
 /*----*/
+
+.blog--title {
+  margin: 0 4rem;
+}
+
+.blog--text {
+  margin: 4rem;
+}
+
 .grid {
   display: grid;
 }
@@ -161,22 +170,33 @@ p {
 }
 
 .blog__header {
-  background-color: lightseagreen;
+  /* background-color: lightseagreen; */
   grid-area: header;
 }
 
 .blog__main {
-  background-color: mediumaquamarine;
+  /* background-color: mediumaquamarine; */
   grid-area: main;
   overflow-y: scroll;
 }
 .blog__sidebar {
-  background-color: mediumseagreen;
+  /* background-color: mediumseagreen; */
   grid-area: sidebar;
   overflow-y: scroll;
 }
+
+.blog__sidebar-portal {
+  margin: 8rem auto;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
 .blog__footer {
-  background-color: mediumspringgreen;
   grid-area: footer;
   height: 5vh;
 }
@@ -208,11 +228,7 @@ p {
 }
 
 /*ABOUT*/
-/*-------------*/
-.about--text {
-  margin: 4rem;
-}
-
+/*-----*/
 .back--arrow {
   margin: 4rem 0.5rem 4rem 4rem;
   transform: rotate(90deg);
@@ -223,9 +239,23 @@ p {
   transition: all 0.5s;
 }
 
-.emphasize__text {
-  font-weight: 600;
-  font-style: italic;
+.header--blue {
+  background-color: var(--color-primary);
+  height: 10px;
+}
+
+/*EDUCATION*/
+/*---------*/
+.header--red {
+  background-color: red;
+  height: 10px;
+}
+
+/*WORK*/
+/*----*/
+.header--green {
+  background-color: green;
+  height: 10px;
 }
 
 /*FOOTER SECTION*/
