@@ -26,6 +26,10 @@ body {
   line-height: 1.5;
 }
 
+p {
+  margin: 0;
+}
+
 /*BUTTON*/
 /*------*/
 
@@ -61,6 +65,10 @@ body {
   text-decoration: none;
 }
 
+.back--link {
+  margin: 0.2rem 0 0.2rem 0;
+}
+
 /*INTRO SECTION*/
 /*------------*/
 #intro {
@@ -91,7 +99,7 @@ body {
 /*PORTALS*/
 /*-------*/
 .portal {
-  margin: 10rem auto;
+  margin: 8rem auto;
   height: 300px;
   width: 300px;
   border-radius: 30px;
@@ -149,7 +157,6 @@ body {
     "main main main main sidebar sidebar"
     "footer footer footer footer footer footer";
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 15vh 70vh 15vh;
   height: 100vh;
 }
 
@@ -166,10 +173,29 @@ body {
 .blog__sidebar {
   background-color: mediumseagreen;
   grid-area: sidebar;
+  overflow-y: scroll;
 }
 .blog__footer {
   background-color: mediumspringgreen;
   grid-area: footer;
+  height: 5vh;
+}
+
+@media screen and (max-width: 850px) {
+  .blog__grid-container {
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+  .blog__main {
+    overflow-y: visible;
+  }
+  .blog__sidebar {
+    overflow-y: visible;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -188,7 +214,7 @@ body {
 }
 
 .back--arrow {
-  margin: 4rem 0.2rem 4rem 4rem;
+  margin: 4rem 0.5rem 4rem 4rem;
   transform: rotate(90deg);
 }
 
