@@ -27,7 +27,7 @@ body {
 }
 
 /*BUTTON*/
-/*--------------*/
+/*------*/
 
 .btn {
   border-radius: 40px;
@@ -51,6 +51,14 @@ body {
 .btn--download:hover {
   background: var(--color-accent);
   transition: 0.25s;
+}
+
+/*LINKS*/
+/*-----*/
+.portal--link,
+.back--link {
+  color: var(--color-body);
+  text-decoration: none;
 }
 
 /*INTRO SECTION*/
@@ -108,11 +116,6 @@ body {
   padding: 2rem 2.5rem;
 }
 
-.portal--link {
-  color: var(--color-body);
-  text-decoration: none;
-}
-
 .coral {
   background: lightcoral;
 }
@@ -134,28 +137,69 @@ body {
   transition: all 0.5s;
 }
 
-@media screen and (max-width: 540px) {
-  .portal .portal--img {
-    filter: blur(10px) grayscale(70%)
-      drop-shadow(16px 16px 20px var(--color-accent)) invert(80%);
-    transition: 0.2s;
-  }
-
-  .portal .portal--title {
-    display: initial;
-  }
-}
-
 /*GRID*/
 /*----*/
 .grid {
   display: grid;
 }
 
+.blog__grid-container {
+  grid-template-areas:
+    "header header header header header header"
+    "main main main main sidebar sidebar"
+    "footer footer footer footer footer footer";
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 15vh 70vh 15vh;
+  height: 100vh;
+}
+
+.blog__header {
+  background-color: lightseagreen;
+  grid-area: header;
+}
+
+.blog__main {
+  background-color: mediumaquamarine;
+  grid-area: main;
+  overflow-y: scroll;
+}
+.blog__sidebar {
+  background-color: mediumseagreen;
+  grid-area: sidebar;
+}
+.blog__footer {
+  background-color: mediumspringgreen;
+  grid-area: footer;
+}
+
 @media screen and (min-width: 1024px) {
+  .grid--1by2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .grid--1by3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/*ABOUT*/
+/*-------------*/
+.about--text {
+  margin: 4rem;
+}
+
+.back--arrow {
+  margin: 4rem 0.2rem 4rem 4rem;
+  transform: rotate(90deg);
+}
+
+.back--arrow:hover {
+  transform: rotate(90deg) translateY(5px);
+  transition: all 0.5s;
+}
+
+.emphasize__text {
+  font-weight: 600;
+  font-style: italic;
 }
 
 /*FOOTER SECTION*/
