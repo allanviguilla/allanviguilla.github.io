@@ -165,6 +165,11 @@ p {
   margin: 4rem;
 }
 
+.emphasize-text {
+  font-weight: 1000;
+  font-size: 2rem;
+}
+
 .grid {
   display: grid;
 }
