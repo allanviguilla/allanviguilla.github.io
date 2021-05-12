@@ -146,7 +146,16 @@ p {
 }
 
 /*BLOG/GRID COMPONENTS*/
-/*----*/
+/*-------------------*/
+.back--arrow {
+  margin: 4rem 0.5rem 4rem 4rem;
+  transform: rotate(90deg);
+}
+
+.back--arrow:hover {
+  transform: rotate(90deg) translateY(5px);
+  transition: all 0.5s;
+}
 
 .blog--title {
   margin: 0 4rem;
@@ -177,17 +186,17 @@ p {
 .blog__main {
   /* background-color: mediumaquamarine; */
   grid-area: main;
-  overflow-y: scroll;
+  overflow-y: visible;
 }
 .blog__sidebar {
   /* background-color: mediumseagreen; */
   grid-area: sidebar;
-  overflow-y: scroll;
+  overflow-y: visible;
 }
 
 .blog__sidebar-portal {
-  margin: 8rem auto;
-  height: 200px;
+  margin: 5rem auto;
+  height: auto;
   width: 200px;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
     0 15px 40px rgba(166, 173, 201, 0.2);
@@ -229,19 +238,13 @@ p {
 
 /*ABOUT*/
 /*-----*/
-.back--arrow {
-  margin: 4rem 0.5rem 4rem 4rem;
-  transform: rotate(90deg);
-}
-
-.back--arrow:hover {
-  transform: rotate(90deg) translateY(5px);
-  transition: all 0.5s;
-}
-
 .header--blue {
   background-color: var(--color-primary);
   height: 10px;
+}
+
+.overview {
+  font-size: 1.2rem;
 }
 
 /*EDUCATION*/
@@ -251,11 +254,24 @@ p {
   height: 10px;
 }
 
+.key-courses {
+  font-size: 1.2rem;
+}
+
 /*WORK*/
 /*----*/
 .header--green {
   background-color: green;
   height: 10px;
+}
+
+.header--green__yellow {
+  background-color: greenyellow;
+  height: 10px;
+}
+
+.skills {
+  font-size: 1.2rem;
 }
 
 /*FOOTER SECTION*/
