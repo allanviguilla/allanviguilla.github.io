@@ -291,9 +291,9 @@ p {
   color: var(--color-tertiary);
 }
 
-.icon:hover {
-  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+.icon:scroll {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
 }
 
 /*WORK*/
