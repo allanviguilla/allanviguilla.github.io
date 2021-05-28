@@ -24,45 +24,201 @@
     </head>
   </head>
   <body>
+    <!-- blog page grid component -->
     <div class="grid blog__grid-container">
+      <!-- header -->
       <div class="blog__header">
-        <a href="index.html" class="back--link"
+        <a href="index.html" class="link back--link"
           ><p>
             <i class="fas fa-arrow-circle-down icon back--arrow"></i>BACK
           </p></a
         >
       </div>
+      <!-- main -->
       <div class="blog__main">
+        <!-- body text -->
         <h1 class="blog--title">Work</h1>
         <p class="blog--text">
           To view or download my resume please
-          <a href="index.html#footer">click here</a>.
+          <a href="index.html#footer" class="link red">click here</a>.
         </p>
+
+        <!-- certifications row -->
+        <div class="grid grid--1by2">
+          <!-- cert 1 -->
+          <div class="portal certification mosh">
+            <header class="portal--header">
+              <h3>Coursera</h3>
+            </header>
+            <div class="portal--description">
+              <h4 class="certification--title">Blockchain Specializiation</h4>
+              <p>
+                Blockchain Basics, A Closer Look at the Ethereum and Bitcoin
+                Blockchains, Alogrithms and Hashing Techniques, and Trust in a
+                Decentralized Network.
+              </p>
+              <p class="align-logo">
+                <a
+                  href="assets/coursera-blockchain-certificate.pdf"
+                  class="link yellow"
+                  >View Certificate <i class="far fa-eye"></i
+                ></a>
+              </p>
+              <p class="align-logo">
+                <img src="img/coursera-logo.png" alt="" class="coursera-logo" />
+              </p>
+            </div>
+          </div>
+          <!-- cert 2 -->
+          <div class="portal certification mosh">
+            <header class="portal--header">
+              <h3>Code With Mosh</h3>
+            </header>
+            <div class="portal--description">
+              <h4 class="certification--title">HTML and CSS Part 1</h4>
+              <p>
+                Complete Web Fundamentals, Setting up your machine and
+                environment, Basic HTML and CSS.
+              </p>
+              <p class="align-logo">
+                <a href="assets/htmlcss-1-certificate.pdf" class="link yellow"
+                  >View Certificate <i class="far fa-eye"></i
+                ></a>
+              </p>
+              <p class="align-logo">
+                <img src="img/mosh-logo.png" alt="" class="mosh-logo" />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- certifications row -->
+        <div class="grid grid--1by2">
+          <!-- cert 1 -->
+          <div class="portal certification mosh">
+            <header class="portal--header">
+              <h3>Code With Mosh</h3>
+            </header>
+            <div class="portal--description">
+              <h4 class="certification--title">HTML and CSS Part 2</h4>
+              <p>
+                Layouts, Typography, Image Optimization, Forms, Transformations,
+                Transitions, Animations.
+              </p>
+              <p class="align-logo">
+                <a href="assets/htmlcss-2-certificate.pdf" class="link yellow"
+                  >View Certificate <i class="far fa-eye"></i
+                ></a>
+              </p>
+              <p class="align-logo">
+                <img src="img/mosh-logo.png" alt="" class="mosh-logo" />
+              </p>
+            </div>
+          </div>
+          <!-- cert 2 -->
+          <div class="portal certification mosh">
+            <header class="portal--header">
+              <h3>Code With Mosh</h3>
+            </header>
+            <div class="portal--description">
+              <h4 class="certification--title">HTML and CSS Part 3</h4>
+              <p>
+                Hands on coding project breaking down a sample website into
+                components and writing clean CSS.
+              </p>
+              <p class="align-logo">
+                <a href="assets/htmlcss-3-certificate.pdf" class="link yellow"
+                  >View Certificate <i class="far fa-eye"></i
+                ></a>
+              </p>
+              <p class="align-logo">
+                <a
+                  href="https://github.com/allanviguilla/moshify-demo"
+                  class="link yellow"
+                  >Click Here for Github <i class="fab fa-github-alt"></i
+                ></a>
+              </p>
+              <p class="align-logo">
+                <img src="img/mosh-logo.png" alt="" class="mosh-logo" />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- certifications row -->
+        <div class="grid grid--1by2">
+          <!-- cert 1 -->
+          <div class="portal certification mosh">
+            <header class="portal--header">
+              <h3>Code With Mosh</h3>
+            </header>
+            <div class="portal--description">
+              <h4 class="certification--title">JavaScript Basics Part 1</h4>
+              <p>
+                Setting up your machine and environment, Operators, Control
+                Flow, Objects, Arrays, and Functions.
+              </p>
+              <p class="align-logo">
+                <a href="assets/js-1-certificate.pdf" class="link yellow"
+                  >View Certificate <i class="far fa-eye"></i
+                ></a>
+              </p>
+              <p class="align-logo">
+                <img src="img/mosh-logo.png" alt="" class="mosh-logo" />
+              </p>
+            </div>
+          </div>
+          <!-- cert 2 -->
+          <div class="portal certification mosh">
+            <header class="portal--header">
+              <h3>Code With Mosh</h3>
+            </header>
+            <div class="portal--description">
+              <h4 class="certification--title">JavaScript OOP Part 2</h4>
+              <p>
+                Basics of Object Oriented Programming, Objects, Prototypes,
+                Inheritance, ECMAScript 6, and ECMAScript Tooling.
+              </p>
+              <p class="align-logo">
+                <a href="assets/js-2-certificate.pdf" class="link yellow"
+                  >View Certificate <i class="far fa-eye"></i
+                ></a>
+              </p>
+              <p class="align-logo">
+                <img src="img/mosh-logo.png" alt="" class="mosh-logo" />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- END BLOG MAIN -->
       </div>
+      <!-- sidebar -->
       <div class="blog__sidebar">
-        <div class="blog__sidebar-portal">
-          <header class="header--green"></header>
+        <div class="portal sidebar-portal strengths">
           <div class="portal--description">
-            <span style="font-weight: 1000">strengths:</span><br /><span
-              style="font-weight: 1000"
-              >-</span
-            >communication<br /><span style="font-weight: 1000">-</span
-            >creativity<br /><span style="font-weight: 1000">-</span
-            >resourcefulness<br />
+            <h3>STRENGTHS</h3>
+            <ul>
+              <li>Creativity</li>
+              <li>Team Work</li>
+              <li>Resourcefulness</li>
+            </ul>
           </div>
         </div>
-        <div class="blog__sidebar-portal skills">
-          <header class="header--green__yellow"></header>
+        <div class="portal sidebar-portal skills">
           <div class="portal--description">
-            <span style="font-weight: 1000; font-size: 1.8rem">key skills:</span
-            ><br /><span style="font-weight: 1000">-</span>front-end
-            development<br /><span style="font-weight: 1000">-</span>user
-            experience design<br /><span style="font-weight: 1000">-</span
-            >interaction design<br />
+            <h3>KEY SKILLS</h3>
+            <ul>
+              <li>Front-End Development</li>
+              <li>Visual Design</li>
+              <li>Interaction Design</li>
+            </ul>
           </div>
         </div>
       </div>
+      <!-- footer -->
       <div class="blog__footer"></div>
+      <!-- end grid blog__grid-container -->
     </div>
   </body>
 </html>

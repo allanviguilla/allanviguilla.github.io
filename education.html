@@ -24,55 +24,96 @@
     </head>
   </head>
   <body>
+    <!-- blog page grid component -->
     <div class="grid blog__grid-container">
+      <!-- header -->
       <div class="blog__header">
-        <a href="index.html" class="back--link"
+        <a href="index.html" class="link back--link"
           ><p>
             <i class="fas fa-arrow-circle-down icon back--arrow"></i>BACK
           </p></a
         >
       </div>
+      <!-- main -->
       <div class="blog__main">
         <h1 class="blog--title">Education</h1>
-        <p class="blog--text">
-          <span class="emphasize-text">New Jersey Institute of Technology,</span
-          ><br />
-          Bachelor's of Science (B.S.), Web and Information Systems<br />September
-          2015 - December 2017
-        </p>
-        <p class="blog--text">
-          <span class="emphasize-text">Raritan Valley Community College,</span
-          ><br />
-          Associate's of Science (A.S.), Web Development<br />
-          January 2012 - May 2014
-        </p>
-        <p class="blog--text">
-          <span class="emphasize-text">Fashion Institute of Technology,</span
-          ><br />
-          Interaction Design<br />September 2011
-        </p>
-        <p class="blog--text">
-          <span class="emphasize-text">Raritan Valley Community College,</span
-          ><br />
-          Fine Arts <br />
-          September 2009 - May 2011
-        </p>
-      </div>
-      <div class="blog__sidebar">
-        <div class="blog__sidebar-portal key-courses">
-          <header class="header--red"></header>
+        <!-- njit -->
+        <div class="portal education njit">
+          <header class="portal--header">
+            <h3>
+              New Jersey Institute of Technology
+              <i class="fas fa-graduation-cap icon"></i>
+            </h3>
+          </header>
           <div class="portal--description">
-            <span style="font-weight: 1000; font-size: 1.8rem"
-              >key courses:</span
-            ><br /><span style="font-weight: 1000">-</span>web development<br /><span
-              style="font-weight: 1000"
-              >-</span
-            >user experience design<br /><span style="font-weight: 1000">-</span
-            >human-computer interaction<br />
+            <p>
+              Bachelor's of Science (B.S.),
+              <span class="emphasize-text">Web and Information Systems</span>
+            </p>
+            <p>
+              <span class="small">Dates Attended:</span> September 2015 -
+              December 2017
+            </p>
+          </div>
+        </div>
+        <!-- rvcc -->
+        <div class="portal education rvcc">
+          <header class="portal--header">
+            <h3>
+              Raritan Valley Community College
+              <i class="fas fa-graduation-cap icon"></i>
+            </h3>
+          </header>
+          <div class="portal--description">
+            <p>
+              Associate's of Science (A.S.),
+              <span class="emphasize-text">Web Development</span>
+            </p>
+            <p>
+              <span class="small">Dates Attended:</span> January 2012 - May 2014
+            </p>
+          </div>
+        </div>
+        <!-- fit -->
+        <div class="portal education fit">
+          <header class="portal--header">
+            <h3>Fashion Institute of Technology</h3>
+          </header>
+          <div class="portal--description">
+            <p>Interaction Design</p>
+            <p><span class="small">Dates Attended:</span> September 2011</p>
+          </div>
+        </div>
+        <!-- rvcc -->
+        <div class="portal education rvcc">
+          <header class="portal--header">
+            <h3>Raritan Valley Community College</h3>
+          </header>
+          <div class="portal--description">
+            <p>Fine Arts</p>
+            <p>
+              <span class="small">Dates Attended:</span> Sep 2009 - May 2011
+            </p>
+          </div>
+        </div>
+        <!-- end main -->
+      </div>
+      <!-- sidebar -->
+      <div class="blog__sidebar">
+        <div class="portal sidebar-portal key-courses">
+          <div class="portal--description">
+            <h3>KEY COURSES</h3>
+            <ul>
+              <li>Web Development</li>
+              <li>User Experience Design</li>
+              <li>Human-Computer Interaction</li>
+            </ul>
           </div>
         </div>
       </div>
+      <!-- footer -->
       <div class="blog__footer"></div>
+      <!-- end grid blog__grid-container -->
     </div>
   </body>
 </html>
