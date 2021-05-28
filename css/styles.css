@@ -94,9 +94,6 @@ p {
   margin: 0.2rem 0 0.2rem 0;
 }
 
-.click-here {
-}
-
 /*INTRO SECTION*/
 /*------------*/
 #intro {
@@ -250,13 +247,33 @@ p {
   }
 }
 
+/*OVERVIEW*/
+/*--------*/
+.overview {
+  background: var(--color-accent);
+}
+
+.overview h3 {
+  color: var(--color-primary);
+}
+
+.overview p {
+  color: var(--color-secondary);
+}
+
 /*EDUCATION*/
 /*---------*/
 .key-courses {
+  background: var(--color-accent);
   width: 250px;
 }
 
+.key-courses h3 {
+  color: var(--color-primary);
+}
+
 .key-courses ul {
+  color: var(--color-secondary);
   list-style: square;
   padding: 1.5rem;
   margin: 0;
@@ -273,34 +290,53 @@ p {
   font-size: 3rem;
 }
 
-.njit {
-  background: #d22630;
-}
-
-.rvcc {
-  background: #1c7a2b;
-}
-
-.fit {
-  background: #0036f9;
-}
-
 .njit h3,
-.rvcc h3,
+.rvcc1 h3 {
+  color: var(--color-primary);
+}
+
+.njit p,
+.rvcc1 p {
+  color: var(--color-secondary);
+}
+
+.rvcc2,
+.fit {
+  background: var(--color-secondary);
+}
+
+.rvcc2 h3,
 .fit h3 {
   color: var(--color-tertiary);
 }
 
-.icon:scroll {
-  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+.icon:hover {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
 }
 
 /*WORK*/
 /*----*/
-.skills,
-.strengths {
+.work {
   width: 300px;
+}
+
+.skills {
+  background: var(--color-intro);
+}
+
+.strengths {
+  background: var(--color-accent);
+}
+
+.skills h3,
+.strengths h3 {
+  color: var(--color-primary);
+}
+
+.skills ul,
+.strengths ul {
+  color: var(--color-secondary);
 }
 
 .skills ul {
