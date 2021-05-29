@@ -254,7 +254,7 @@ p {
 }
 
 .overview h3 {
-  color: var(--color-secondary);
+  color: var(--color-body);
 }
 
 .overview .portal--header {
@@ -273,7 +273,7 @@ p {
 }
 
 .key-courses h3 {
-  color: var(--color-secondary);
+  color: var(--color-body);
   display: inline;
 }
 
@@ -315,15 +315,27 @@ p {
   color: var(--color-tertiary);
 }
 
-.icon:hover {
-  -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-}
-
 /*WORK*/
 /*----*/
 .work {
   width: 300px;
+}
+
+.work .portal--header {
+  padding: 0;
+}
+
+.work h3 {
+  color: var(--color-body);
+  display: inline;
+  margin: 0;
+}
+
+.work ul {
+  color: var(--color-body);
+  list-style: square;
+  padding: 1.5rem;
+  margin: 0;
 }
 
 .skills {
@@ -332,28 +344,6 @@ p {
 
 .strengths {
   background: var(--color-accent-alt);
-}
-
-.skills h3,
-.strengths h3 {
-  color: var(--color-secondary);
-}
-
-.skills ul,
-.strengths ul {
-  color: var(--color-body);
-}
-
-.skills ul {
-  list-style: square;
-  padding: 1.5rem;
-  margin: 0;
-}
-
-.strengths ul {
-  list-style: square;
-  padding: 1.5rem;
-  margin: 0;
 }
 
 .certification {
@@ -366,6 +356,10 @@ p {
 
 .certification p {
   color: var(--color-primary);
+}
+
+.certification--title {
+  text-align: center;
 }
 
 .certification h3 {
