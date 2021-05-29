@@ -123,7 +123,7 @@ p {
 /*PORTALS*/
 /*-------*/
 .portal {
-  background: var(--color-tertiary);
+  background: var(--color-secondary);
   margin: 8rem auto;
   height: 300px;
   width: 300px;
@@ -133,7 +133,7 @@ p {
 }
 
 .portal--header {
-  color: var(--color-secondary);
+  color: var(--color-tertiary);
   font-weight: 800;
   font-size: 2.8rem;
   padding-top: 3rem;
@@ -168,6 +168,10 @@ p {
 
 .blog--title {
   margin: 0 2rem;
+}
+
+.center__title {
+  text-align: center;
 }
 
 .blog--text {
@@ -295,6 +299,11 @@ p {
   font-size: 3rem;
 }
 
+.njit,
+.rvcc1 {
+  background: var(--color-tertiary);
+}
+
 .njit h3,
 .rvcc1 h3 {
   color: var(--color-primary);
@@ -359,10 +368,6 @@ p {
   color: var(--color-primary);
 }
 
-.certification--title {
-  text-align: center;
-}
-
 .certification h3 {
   color: var(--color-secondary);
 }
@@ -372,7 +377,8 @@ p {
 }
 
 .certification--title {
-  color: var(--color-body);
+  color: var(--color-secondary);
+  text-align: center;
 }
 
 .mosh-logo {
