@@ -391,6 +391,10 @@ p {
   width: 100px;
 }
 
+.course {
+  padding-top: 1rem;
+}
+
 .align-logo {
   text-align: center;
   padding: 2rem;
