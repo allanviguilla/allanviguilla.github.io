@@ -250,30 +250,26 @@ p {
 /*OVERVIEW*/
 /*--------*/
 .overview {
-  background: var(--color-accent);
+  background: var(--color-accent-alt);
 }
 
 .overview h3 {
-  color: var(--color-primary);
-}
-
-.overview p {
   color: var(--color-secondary);
 }
 
 /*EDUCATION*/
 /*---------*/
 .key-courses {
-  background: var(--color-accent);
+  background: var(--color-accent-alt);
   width: 250px;
 }
 
 .key-courses h3 {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .key-courses ul {
-  color: var(--color-secondary);
+  color: var(--color-body);
   list-style: square;
   padding: 1.5rem;
   margin: 0;
@@ -326,7 +322,7 @@ p {
 }
 
 .strengths {
-  background: var(--color-accent);
+  background: var(--color-accent-alt);
 }
 
 .skills h3,
@@ -336,7 +332,7 @@ p {
 
 .skills ul,
 .strengths ul {
-  color: var(--color-secondary);
+  color: var(--color-body);
 }
 
 .skills ul {
