@@ -396,6 +396,10 @@ p {
   padding: 2rem;
 }
 
+.clear {
+  padding: 0;
+}
+
 /*FOOTER SECTION*/
 /*-------------*/
 #footer {
