@@ -167,7 +167,7 @@ p {
 }
 
 .blog--title {
-  margin: 0 4rem;
+  margin: 0 2rem;
 }
 
 .blog--text {
@@ -257,6 +257,10 @@ p {
   color: var(--color-secondary);
 }
 
+.overview .portal--header {
+  padding: 0;
+}
+
 /*EDUCATION*/
 /*---------*/
 .key-courses {
@@ -264,8 +268,13 @@ p {
   width: 250px;
 }
 
+.key-courses .portal--header {
+  padding: 0;
+}
+
 .key-courses h3 {
   color: var(--color-secondary);
+  display: inline;
 }
 
 .key-courses ul {
@@ -279,7 +288,7 @@ p {
   height: auto;
   width: auto;
   border-radius: 5px;
-  margin: 2rem 2rem;
+  margin: 2rem 6rem;
 }
 
 .education h3 {
@@ -327,7 +336,7 @@ p {
 
 .skills h3,
 .strengths h3 {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .skills ul,
@@ -348,14 +357,19 @@ p {
 }
 
 .certification {
+  background: var(--color-tertiary);
   height: auto;
   width: auto;
   border-radius: 5px;
   margin: 2rem 2rem;
 }
 
+.certification p {
+  color: var(--color-primary);
+}
+
 .certification h3 {
-  color: var(--color-tertiary);
+  color: var(--color-secondary);
 }
 
 .certification h4 {
@@ -363,11 +377,7 @@ p {
 }
 
 .certification--title {
-  color: var(--color-primary);
-}
-
-.mosh {
-  background: var(--color-secondary);
+  color: var(--color-body);
 }
 
 .mosh-logo {
