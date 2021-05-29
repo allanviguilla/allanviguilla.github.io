@@ -36,6 +36,7 @@ h3 {
 }
 
 p {
+  padding: 0;
   margin: 0;
 }
 
@@ -94,32 +95,6 @@ p {
   margin: 0.2rem 0 0.2rem 0;
 }
 
-/*INTRO SECTION*/
-/*------------*/
-#intro {
-  display: flex;
-  height: 100vh;
-  background-color: var(--color-intro);
-}
-
-.intro--title {
-  font-size: 5rem;
-  font-weight: 800;
-  margin: 0;
-  padding: 0 3rem;
-  justify-self: center;
-  align-self: center;
-}
-
-@media screen and (min-width: 700px) {
-  .intro--title {
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}
-
 /*PORTALS*/
 /*-------*/
 .portal {
@@ -130,6 +105,12 @@ p {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .portal {
+    margin: 4rem auto;
+  }
 }
 
 .portal--header {
@@ -167,7 +148,7 @@ p {
 }
 
 .blog--title {
-  margin: 0 2rem;
+  margin: 0 3rem;
 }
 
 .center__title {
@@ -175,7 +156,7 @@ p {
 }
 
 .blog--text {
-  margin: 2rem 2rem;
+  margin: 2rem 3rem;
 }
 
 .small {
@@ -225,7 +206,7 @@ p {
   height: 5vh;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
   .blog__grid-container {
     grid-template-areas:
       "header"
@@ -249,6 +230,38 @@ p {
   .grid--1by3 {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/*INTRO SECTION*/
+/*------------*/
+#intro {
+  display: flex;
+  height: 100vh;
+  background-color: var(--color-intro);
+}
+
+.intro--title {
+  font-size: 5rem;
+  font-weight: 800;
+  margin: 0;
+  padding: 0 3rem;
+  justify-self: center;
+  align-self: center;
+}
+
+@media screen and (min-width: 700px) {
+  .intro--title {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+
+/*MAIN SECTION*/
+/*------------*/
+.main {
+  margin-top: 3.5rem;
 }
 
 /*OVERVIEW*/
@@ -293,6 +306,16 @@ p {
   width: auto;
   border-radius: 5px;
   margin: 2rem 6rem;
+}
+
+@media screen and (max-width: 900px) {
+  .education {
+    margin: 2rem 1rem;
+  }
+
+  .education .portal--header {
+    margin: 0 2.5rem;
+  }
 }
 
 .education h3 {
@@ -378,6 +401,7 @@ p {
 
 .certification--title {
   color: var(--color-secondary);
+  padding-bottom: 1rem;
   text-align: center;
 }
 
