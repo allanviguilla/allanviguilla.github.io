@@ -201,6 +201,24 @@ p {
   width: 200px;
 }
 
+.sidebar-portal ul {
+  color: var(--color-body);
+  list-style: square;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.sidebar-portal h3 {
+  color: var(--color-body);
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-portal .portal--header {
+  padding: 0;
+}
+
 .blog__footer {
   grid-area: footer;
   height: 5vh;
@@ -270,35 +288,11 @@ p {
   background: var(--color-accent-alt);
 }
 
-.overview h3 {
-  color: var(--color-body);
-}
-
-.overview .portal--header {
-  padding: 0;
-}
-
 /*EDUCATION*/
 /*---------*/
 .key-courses {
   background: var(--color-accent-alt);
   width: 250px;
-}
-
-.key-courses .portal--header {
-  padding: 0;
-}
-
-.key-courses h3 {
-  color: var(--color-body);
-  display: inline;
-}
-
-.key-courses ul {
-  color: var(--color-body);
-  list-style: square;
-  padding: 1.5rem;
-  margin: 0;
 }
 
 .education {
@@ -351,24 +345,6 @@ p {
 /*----*/
 .work {
   width: 300px;
-}
-
-.work .portal--header {
-  padding: 0;
-}
-
-.work h3 {
-  color: var(--color-body);
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-
-.work ul {
-  color: var(--color-body);
-  list-style: square;
-  padding: 1.5rem;
-  margin: 0;
 }
 
 .skills {
