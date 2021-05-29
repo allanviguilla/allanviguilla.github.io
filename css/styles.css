@@ -329,6 +329,7 @@ p {
   color: var(--color-body);
   display: inline;
   margin: 0;
+  padding: 0;
 }
 
 .work ul {
